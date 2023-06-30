@@ -1,0 +1,51 @@
+@import url(./_reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;0,800;1,200;1,300;1,800&family=Wire+One&display=swap');
+
+:root {
+	--color-claro: #F3EFE0;
+	--color-gris-oscuro: #434242;
+	--color-negro: #252525;
+	--color-verde-principal: #22A39F;
+	--font-monserrat: 'Montserrat', sans-serif;
+	--font-wire-one: 'Wire One', sans-serif;
+}
+
+header{
+	width: 100%;
+	height: fit-content;
+}
+
+.header {
+	width: 100%;
+	height: auto;
+	border: 3px solid violet;
+}
+
+.btn {
+	border: 3px solid red;
+}
+
+.menu-bar {
+	border: 5px solid green;
+	z-index: 0;
+}
+
+.menu--activo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 3;
+	border: 2px solid yellow;
+}
+
+.menu--fondo {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 12em;
+	border: 3px solid yellow;
+}
