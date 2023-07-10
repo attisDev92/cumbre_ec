@@ -24,11 +24,16 @@ header{
 
 .btn {
 	border: 3px solid red;
+	display: block;
 }
 
+/* header y menu */
+
 .menu-bar {
+	position: fixed;
+	width: 100%;
 	border: 5px solid green;
-	z-index: 0;
+	z-index: 2;
 }
 
 .menu--activo {
@@ -49,3 +54,145 @@ header{
 	height: 12em;
 	border: 3px solid yellow;
 }
+
+/* BANNER PRINCIPAL */
+
+.banner-principal {
+	border: 3px solid greenyellow;
+	height: 100vh;
+	width: 100%;
+}
+
+.banner-principal video {
+	border: 3px solid blueviolet;
+    width: 75%;
+    max-width: 60rem;
+    height: auto;
+    margin: 10rem auto 5rem;
+	aspect-ratio: 16/9;
+}
+
+.btn__banner {
+	margin: auto;
+}
+
+.container__iconos {
+	width: auto;
+	height: 4em;
+	padding: 0.19em 0;
+}
+
+.container__contacto {
+	position: fixed;
+	bottom: 3em;
+	right: 3em;
+	border: 3px solid red;
+	z-index: 2;
+}
+
+.container__rrss {
+	position: absolute;
+	bottom: 3em;
+	left: 3em;
+	border: 4px solid blue;
+}
+
+.container__iconos a {
+	border: 2px solid green;
+	display: inline-block;
+	width: 3em;
+	height: 3em;
+	margin: 0.07em 0;
+}
+
+/* NOSOTROS */
+
+.equipo {
+	height: 80vh;
+	width: 100%;
+	padding-top: 5rem;
+	border: 3px solid yellow;
+}
+
+.equipo video {
+	border: 3px solid blueviolet;
+    width: 40rem;
+    min-width: 20rem;
+    height: auto;
+	aspect-ratio: 16/9;
+	margin-left: 45%;
+	margin-top: -25rem;
+}
+
+.frase--1 {
+	font-size: 5rem;
+	text-align: right;
+    width: 40%;
+    margin: 5rem -1rem 0 3rem;
+}
+
+.frase--2 {
+	font-size: 5.5rem;
+	margin: 2rem auto;
+    width: fit-content;
+}
+
+.container__titulo {
+	border: 3px solid orangered;
+	margin: 0 auto 2rem;
+	width: fit-content;
+	padding: 0.2em;
+}
+
+.icono {
+	border: 2px solid green;
+	width: 3em;
+	height: 3em;
+}
+
+.titulo {
+	font-size: 2em;
+	padding: 0.1em;
+}
+
+.container__equipo {
+	padding-inline: 10%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.equipo__contenido {
+	border: 3px solid yellowgreen;
+	width: 40%;
+	max-width: 34rem;
+	height: 30rem;
+	margin: 0 2em;
+}
+
+.equipo__contenido h3 {
+	text-align: right;
+	position: absolute;
+	margin: 1rem 0 0 19rem;
+	font-size: 1.7rem;
+	z-index: 1;
+}
+
+.equipo__contenido img {
+	border: 3px solid blue;
+    width: 70%;
+    z-index: 0;
+    position: relative;
+    margin: 0.5em;
+    height: 97%;
+}
+
+.equipo__contenido button {
+	position: absolute;
+    margin: -4rem 14rem;
+    width: 15rem;
+    z-index: 1;
+}
+
+/* FOOTER */
+
+/* CONTACTO */

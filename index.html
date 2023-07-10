@@ -14,41 +14,95 @@
 	<body>
 		<header class="container-fluid">
 			<div class="menu-bar row justify-content-between">
-				<a class="logo col-2">
+				<a class="logo col-sm-2">
 					<img src="" alt="cumbre">
 				</a>
-				<a class="btn col-1" id="btn-menu">
+				<a class="btn col-2" id="btn-menu">
 					Menú
 				</a>
 			</div>
-			<nav id="menu container-fluid" style="display: none;">
+			<div id="menu container-fluid" style="display: none;">
 				<div class="row justify-content-between">
 					<p class="col-2">Menú</p>
 					<a class="col-1" id="cerrar-menu">
 						<img src="" alt="cerrar">
 					</a>
 				</div>
-				<ul>
-					<li>INICIO</li>
-					<li>NOSOTROS</li>
-					<li>PORTAFOLIO</li>
-					<li>CONTACTANOS</li>
-				</ul>
+				<nav>
+					<ul>
+						<li><a>INICIO</a></li>
+						<li><a>NOSOTROS</a></li>
+						<li><a>PORTAFOLIO</a></li>
+						<li><a>CONTACTANOS</a></li>
+					</ul>
+				</nav>
 				<div class="menu--fondo">
 					<img src="" alt="montañas">
 				</div>
-			</nav>
+			</div>
 		</header>
 		<main>
-			<section>
-
+			<section class="banner-principal">
+				<video controls>
+					<source src="" type="video/mp4">
+					<source src="" type="video/webm">
+					<source src="" type="video/ogg">
+					Tu navegador no admite la reproducción de video.
+				</video>
+				<button class="btn btn__banner">Tengamos una reunión</button>
+				<div class="container__contacto container__iconos">
+					<a href="">
+						<img src="" alt="whatsapp">
+					</a>
+					<a href="">
+						<img src="" alt="contacto">
+					</a>
+				</div>
+				<div class="container__rrss container__iconos">
+					<a href="">
+						<img src="" alt="facebook">
+					</a>
+					<a href="">
+						<img src="" alt="instagram">
+					</a>
+					<a href="">
+						<img src="" alt="tiktok">
+					</a>
+				</div>
 			</section>
-			<section>
-
+			<section class="equipo">
+				<p class="frase--1">CONTEMOS JUNTOS HISTORIAS</p>
+				<video controls class="">
+					<source src="video.mp4" type="video/mp4">
+					<source src="video.webm" type="video/webm">
+					<source src="video.ogv" type="video/ogg">
+					Tu navegador no admite la reproducción de video.
+				</video>
+				<p class="frase--2">QUE MOVILICEN</p>
+			</section>
+			<section class="equipo">
+				<div class="container__titulo row">
+					<img class="icono col-2" src="" alt="mosqueton">
+					<h2 class="titulo col">CONOCE AL EQUIPO</h2>
+				</div>
+				<div class="container__equipo">
+					<div class="equipo__contenido">
+						<h3>ALEJANDRO<br>
+							ASTUDILLO</h3>
+						<img src="" alt="ALEJANDRA ASTUDILLO">
+						<button class="btn">VER VIDEO</button>
+					</div>
+					<div class="equipo__contenido">
+						<h3>MILTON<br>
+							PILCO</h3>
+						<img src="" alt="MILTON PILCO">
+						<button class="btn">VER VIDEO</button>
+					</div>
+				</div>
 			</section>
 		</main>
 		<footer>
-			<iframe src="./footer.html" frameborder="0"></iframe>
+
 		</footer>
 	</body>
 </html>
