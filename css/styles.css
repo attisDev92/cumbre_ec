@@ -59,17 +59,19 @@ header{
 
 .banner-principal {
 	border: 3px solid greenyellow;
-	height: 100vh;
-	width: 100%;
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100%;
+    padding-bottom: 3rem;
 }
 
 .banner-principal video {
 	border: 3px solid blueviolet;
-    width: 75%;
-    max-width: 60rem;
+    width: 65%;
+    max-width: 50rem;
     height: auto;
-    margin: 10rem auto 5rem;
-	aspect-ratio: 16/9;
+    margin: 5rem auto;
+    aspect-ratio: 16/9;
 }
 
 .btn__banner {
@@ -78,16 +80,8 @@ header{
 
 .container__iconos {
 	width: auto;
-	height: 4em;
+	height: auto;
 	padding: 0.19em 0;
-}
-
-.container__contacto {
-	position: fixed;
-	bottom: 3em;
-	right: 3em;
-	border: 3px solid red;
-	z-index: 2;
 }
 
 .container__rrss {
@@ -97,9 +91,17 @@ header{
 	border: 4px solid blue;
 }
 
+
+.container__contacto {
+	position: fixed;
+	bottom: 3em;
+	right: 3em;
+	border: 3px solid red;
+	z-index: 2;
+}
+
 .container__iconos a {
 	border: 2px solid green;
-	display: inline-block;
 	width: 3em;
 	height: 3em;
 	margin: 0.07em 0;
@@ -108,9 +110,10 @@ header{
 /* NOSOTROS */
 
 .equipo {
-	height: 80vh;
+	min-height: 70vh;
+    max-height: fit-content;
 	width: 100%;
-	padding-top: 5rem;
+	padding-block: 5rem;
 	border: 3px solid yellow;
 }
 
@@ -163,36 +166,96 @@ header{
 
 .equipo__contenido {
 	border: 3px solid yellowgreen;
-	width: 40%;
+	width: auto;
 	max-width: 34rem;
 	height: 30rem;
 	margin: 0 2em;
 }
 
 .equipo__contenido h3 {
-	text-align: right;
-	position: absolute;
-	margin: 1rem 0 0 19rem;
-	font-size: 1.7rem;
-	z-index: 1;
+	position: inherit;
+    margin: 1rem;
+    width: inherit;
+    text-align: right;
+	font-size: 1.4rem;
 }
 
 .equipo__contenido img {
 	border: 3px solid blue;
     width: 70%;
-    z-index: 0;
+    z-index: -1;
     position: relative;
-    margin: 0.5em;
+    margin: -5rem 0.5rem 0;
     height: 97%;
 }
 
 .equipo__contenido button {
-	position: absolute;
-    margin: -4rem 14rem;
+	margin: -3rem auto;
     width: 15rem;
-    z-index: 1;
 }
 
 /* FOOTER */
+footer {
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+}
 
+.container-mountains {
+	height: 30rem;
+	width: auto;
+	border: 4px solid crimson;
+}
+
+.mountains {
+	height: 15rem;
+}
+
+.mountains--up {
+	border: 3px solid green;
+}
+
+.mountains--downs {
+	border: 3px solid lightcoral;
+}
+
+.btn--portafolio {
+	margin: auto;
+}
+
+.container-footer {
+	padding: 2rem;
+}
+
+.footer__logo {
+	margin: auto;
+}
+
+.lista__rrss p,
+.lista__rrss img {
+	display: inline-block;
+}
 /* CONTACTO */
+
+.container-contacto__form {
+	display: block;
+	position: fixed;
+	top: 0;
+	z-index: 7;
+	background-color: white;
+	width: 100vw;
+	height: 100vh;
+	padding: 3rem;
+}
+
+.form-contact {
+	margin: 2rem auto;
+	min-width: 40rem;
+	max-width: 40%;
+}
+
+.form-datos {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
