@@ -259,3 +259,24 @@ footer {
 	bottom: 0;
 	left: 0;
 }
+
+/* REEL */
+/* slider */
+.container-slider {
+	border: 5px solid red;
+	width: 100vw;
+	height: 90vh;
+	overflow: hidden;
+}
+
+.slider {
+	border: 3px solid blue;
+	width: 200%;
+	height: auto;
+}
+
+
+
+
+
+
